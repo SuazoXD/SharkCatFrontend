@@ -1,0 +1,245 @@
+/* Estilos generales */
+.header {
+  background-color: #420A69;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.navTitle {
+  margin-left: 8px;
+  font-size: 28px;
+  font-family: 'Protest Strike', sans-serif;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Estilo para eliminar subrayado en enlaces */
+.authButton a,
+.authButton {
+  text-decoration: none; /* Elimina el subrayado */
+  color: white; /* Asegura que el color del texto sea blanco */
+}
+
+.dropdown {
+  position: relative;
+  margin-left: 20px;
+}
+
+.dropdownButton {
+  background-color: #F44E02;
+  color: white;
+  padding: 12px 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  margin-right: 15px;
+}
+
+.dropdownButton img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #A05986;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.dropdownContent ul li {
+  padding: 5px 0;
+  color: #FFFFFF;
+}
+
+/* Barra de búsqueda */
+.navSearch {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.searchInput {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #F44E02;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.searchButton img {
+  width: 16px;
+  height: 16px;
+}
+
+.searchButton:hover {
+  background-color: #9D3A1D;
+}
+
+/* Botones de autenticación */
+.authButtons {
+  display: flex;
+  gap: 15px; /* Espacio entre los botones */
+  list-style-type: none; /* Elimina las viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+.authButtons li {
+  display: inline-block; /* Asegura que cada botón sea un bloque en línea */
+}
+
+.authButton {
+  padding: 10px 20px;
+  background-color: #F44E02;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+.authButton img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.authButton:hover {
+  background-color: #9D3A1D;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navSearch {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .authButtons {
+    flex-direction: row;
+  }
+
+  .authButton {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .authButtons {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .authButton {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdownButton {
+    padding: 5px 15px;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+
+  .searchButton {
+    padding: 5px 10px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+}
+/* Dropdown de Perfil */
+.profileDropdown {
+  position: relative;
+}
+
+.profileMenu {
+  position: absolute;
+  top: 40px; /* Ajustar según la posición del botón */
+  right: 0;
+  background-color: #A05986;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.profileMenu a, .profileMenu button {
+  padding: 10px;
+  color: white;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.profileMenu button:hover, .profileMenu a:hover {
+  background-color: #F78F02;
+}

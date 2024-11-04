@@ -1,0 +1,125 @@
+.container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.preRegistroBox {
+  background-color: var(--container-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.preRegistroLogo {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.paragraph {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.searchBar {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  flex: 1;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: 10px;
+  color: var(--button-text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.activeTab {
+  background-color: var(--button-hover-bg);
+}
+
+.checkboxGroup {
+  margin-bottom: 1.5rem;
+}
+
+.checkboxGroup label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.uploadBox input[type="file"] {
+  margin-top: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.omitirButton,
+.guardarButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--button-bg);
+  color: var(--button-text-color);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.omitirButton:hover,
+.guardarButton:hover {
+  background-color: var
+  (--button-hover-bg);
+}
+
+.omitirButton {
+  background-color: var(--button-bg);
+}
+
+.guardarButton {
+  background-color: var(--button-bg);
+}
+
+.omitirButton:hover {
+  background-color: var(--button-hover-bg);
+}
+
+.guardarButton:hover {
+  background-color: var(--button-hover-bg);
+}

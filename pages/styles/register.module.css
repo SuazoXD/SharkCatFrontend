@@ -1,0 +1,373 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  color: white;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks a {
+  margin-left: 8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.registerButton {
+  background-color: #0070f3;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.registerButton:hover {
+  background-color: #005bb5;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+.subscribeSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribeButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.subscribeButton:hover {
+  background-color: #005bb5;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+.footerBottom a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerBottom a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos existentes */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background-image: url('/images/background-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.registerBox {
+  background-color: #0f0b30de;
+  padding: 2.5rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.sharkCatTitle {
+  font-family: 'Protest Strike', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #F78F02;
+  margin-top: -30px;
+  letter-spacing: 0.1em;
+}
+
+.logoImage {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.inputContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.eyeIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.select {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: #F78F02;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #815c28;
+}
+
+.message {
+  margin-top: 1rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Botón Home dentro del contenedor en la esquina superior derecha */
+.homeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.homeButton:hover {
+  background-color: #005bb5;
+}
+
+.homeIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+  .registerBox {
+    padding: 1.5rem;
+  }
+
+  .sharkCatTitle {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 0.875rem;
+  }
+
+  .button {
+    font-size: 0.875rem;
+  }
+
+  .homeButton {
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .homeIcon {
+    width: 20px;
+    height: 20px;
+} 
+}
+
+/* Estilos para la ventana emergente (pop-up) */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.popup {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.closeButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: #005bb5;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.smallInput {
+  width: 60%;
+}
+
+.verifyButton {
+  width: 35%;
+  background-color: #0070f3;
+  color: white;
+}
+
+.verifyButton:hover {
+  background-color: #005bb5;
+}
+
+/* Estilos para los botones de radio (Pupilo y Tutor) */
+.radioGroup {
+  display: flex !important;
+  justify-content: center !important; /* Centra horizontalmente */
+  margin-bottom: 2rem !important; /* Aumenta el espacio debajo de los botones */
+  gap: 20px !important; /* Espacio entre los botones */
+  color: white;
+  font-size: 20px;
+}
+
+.error {
+  color: #ff4d4d; /* Un rojo más claro y visible sobre fondos oscuros */
+  font-size: 15px; /* Ajusta el tamaño del texto si es necesario */
+  margin-top: 0.5rem; /* Espacio adicional para que no quede pegado al campo */
+}
+

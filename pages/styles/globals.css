@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #332D59;           /* Fondo principal oscuro */
+  --container-bg: #2F2A40;       /* Fondo contenedores */
+  --accent-color: #BAD6D9;       /* Acentos */
+  --button-bg: #B6ECF2;          /* Botones primarios */
+  --button-hover-bg: #BAD6D9;    /* Hover de los botones */
+  --button-text-color: #2F2A40;  /* Texto en botones claros */
+  --text-color: #F2E9E4;         /* Texto principal en modo oscuro */
+  --error-color: #FF4C4C;        /* Color para errores */
+}

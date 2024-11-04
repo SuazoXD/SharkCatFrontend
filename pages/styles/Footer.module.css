@@ -1,0 +1,102 @@
+/* Estilo general del footer */
+.footer {
+  background-color: #420A69; /* Color oscuro */
+  color: #A05986; /* Texto en color suave */
+  padding: 30px;
+  border-radius: 16px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal del footer */
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* Categorías alineadas a la izquierda */
+.categories {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.tituloCategoria {
+  color: #F10B8F;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+}
+
+.categoriaTexto {
+  color: #A05986;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.categoriaEnlace {
+  color: #F44E02;
+  text-decoration: none;
+}
+
+.categoriaEnlace:hover {
+  color: #9D3A1D;
+  transition: color 0.3s ease;
+}
+
+/* Redes sociales alineadas a la derecha */
+.social {
+  flex: 1;
+  text-align: right;
+}
+
+.socialGrid {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.socialGrid li {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Texto de derechos reservados centrado en la parte inferior */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #9D3A1D;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column; /* Ajuste a columna en pantallas pequeñas */
+  }
+
+  .categories {
+    text-align: center; /* Centrar las categorías en pantallas pequeñas */
+    margin-bottom: 10px;
+  }
+
+  .social {
+    text-align: center; /* Centrar redes sociales en pantallas pequeñas */
+  }
+
+  .socialGrid {
+    justify-content: center;
+  }
+}

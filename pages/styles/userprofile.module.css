@@ -1,0 +1,255 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.coverPhotoContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #f3f3f3;
+}
+
+.coverPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coverInputLabel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #f44e02;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.profileContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileHeader {
+  text-align: center;
+}
+
+.profileImageContainer {
+  position: relative;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #f44e02;
+  object-fit: cover;
+}
+
+.fileInputLabel {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: #f44e02;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profileDetailsContainer {
+  margin-top: 20px;
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileDetails input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.saveButton {
+  padding: 10px;
+  background-color: #f44e02;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.commentsSection {
+  margin-top: 30px;
+}
+
+.showCommentsButton {
+  background-color: #f44e02;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.commentInputContainer {
+  margin-top: 10px;
+}
+
+.commentInput {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.submitCommentButton {
+  padding: 10px;
+  background-color: #f44e02;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #f44e02;
+}
+
+.commentItem {
+  margin-bottom: 10px;
+}
+
+.ratingContainer {
+  margin-top: 10px;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.coverPhotoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Colocar en columna */
+  align-items: center; /* Centrar horizontalmente */
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+}
+
+.coverPhoto {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.centeredInputContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Centrar el botón */
+}
+
+.centeredProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido horizontalmente */
+}
+
+.profileContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Poner el contenido en columna */
+  align-items: center; /* Centrar el contenido horizontalmente */
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f44e02;
+}
+
+.fileInput {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.profileName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center; /* Centrar el texto del nombre */
+}
+
